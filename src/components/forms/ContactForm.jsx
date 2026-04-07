@@ -80,7 +80,11 @@ export default function ContactFormB() {
           </div>
 
           {/* FORM GRID */}
-          <form onSubmit={handleSubmit} className="relative z-10">
+          <form
+            onSubmit={handleSubmit}
+            autoComplete="off"
+            className="relative z-10"
+          >
             {/* Honeypot */}
             <div className="hidden">
               <label htmlFor="website">Website</label>

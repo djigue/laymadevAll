@@ -24,6 +24,7 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
+      autoComplete="off"
       className="bg-[#14161c] border border-white/5 rounded-2xl p-8 md:p-10 shadow-[0_40px_80px_rgba(0,0,0,0.6)] space-y-6"
     >
       {/* Honeypot */}
