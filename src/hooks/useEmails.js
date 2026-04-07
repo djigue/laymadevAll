@@ -91,9 +91,6 @@ export function useEmailJs(initialState) {
     };
 
     try {
-      console.log("SERVICE:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-console.log("TEMPLATE:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-console.log("KEY:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
