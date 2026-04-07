@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useEmailJs } from "@/hooks/useEmails.js";
+import SuccessModal from "@/components/SuccessModal";
 
 const initialState = {
   from_name: "",
@@ -14,8 +16,12 @@ const initialState = {
 };
 
 export default function ContactFormB() {
+  const [showModal, setShowModal] = useState(false);
+  const handleSuccess = () => {
+    setShowModal(true);
+  };
   const { form, handleChange, handleSubmit, status, loading, todayISO } =
-    useEmailJs(initialState);
+    useEmailJs(initialState, handleSuccess);
 
   return (
     <div className="w-full flex justify-center py-12 relative">
@@ -229,6 +235,7 @@ export default function ContactFormB() {
           </form>
         </div>
       </motion.div>
+      <SuccessModal open={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 }

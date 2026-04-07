@@ -25,7 +25,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-export function useEmailJs(initialState) {
+export function useEmailJs(initialState, onSuccess) {
   const [form, setForm] = useState(initialState);
   const formLoadedAt = useRef(Date.now());
   const [status, setStatus] = useState({ type: "", msg: "" });
@@ -100,6 +100,8 @@ export function useEmailJs(initialState) {
 
       setStatus({ type: "success", msg: "Message envoyé ✅" });
       setForm(initialState);
+      console.log("EMAIL SUCCESS TRIGGER");
+      if (onSuccess) onSuccess();
     } catch (err) {
       console.error(err);
       setStatus({ type: "error", msg: "Erreur lors de l’envoi." });
