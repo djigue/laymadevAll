@@ -5,7 +5,6 @@ import { usePageTransition } from "@/context/TransitionProvider";
 
 export default function TransitionOverlay() {
   const { isTransitioning } = usePageTransition();
-  console.log("OVERLAY MOUNTED");
   return (
     <motion.div
       initial={false}

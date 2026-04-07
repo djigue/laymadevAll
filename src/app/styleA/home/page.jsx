@@ -9,7 +9,7 @@ export const metadata = {
   title: "Création site internet Béziers | Développeur Web Hérault",
 
   description:
-    "Création de sites internet à Béziers, Hérault et Hauts-Cantons. Développeur web freelance spécialisé en SEO, applications web et solutions digitales pour entreprises locales.",
+    "Création de sites internetpour entreprises locales à Béziers, Hérault et Hauts-Cantons. Développeur web freelance. ",
 
   keywords: [
     "création site internet Béziers",
@@ -30,7 +30,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://www.laymadev.com/styleA/home",
+    canonical: "https://www.laymadev.com",
   },
 
   openGraph: {
@@ -103,7 +103,12 @@ export default function HomeA() {
           </MotionTitle>
 
           <MotionP className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-            Solutions web performantes, évolutives et pensées pour durer.
+            Développeur web freelance à Béziers, je conçois des sites internet
+            et des applications web performantes, modernes et optimisées pour le
+            référencement naturel (SEO). J’accompagne les entreprises locales
+            dans l’Hérault et les Hauts-Cantons afin de créer des solutions
+            digitales efficaces, pensées pour durer et évoluer avec votre
+            activité.
           </MotionP>
 
           <Link
@@ -128,9 +133,14 @@ export default function HomeA() {
                 Solutions sur mesure
               </h3>
               <p>
-                Conception d’applications web modernes, architecture solide,
-                développement front-end & back-end avec une attention
-                particulière à la performance et à la maintenabilité.
+                Je conçois des applications web modernes et des sites internet
+                sur mesure pour les entreprises à Béziers et dans l’Hérault.
+                Chaque projet repose sur une architecture solide, pensée pour
+                garantir performance, sécurité et évolutivité. J’interviens
+                aussi bien sur le développement front-end que back-end, en
+                accordant une attention particulière à la qualité du code, à la
+                maintenabilité et à l’optimisation SEO afin d’améliorer votre
+                visibilité sur les moteurs de recherche.
               </p>
             </div>
 
@@ -139,9 +149,14 @@ export default function HomeA() {
                 Accompagnement technique
               </h3>
               <p>
-                Conseil, optimisation, refonte et accompagnement long terme.
-                Vous échangez directement avec la personne qui conçoit et
-                développe votre solution.
+                Je vous accompagne à chaque étape de votre projet web, du
+                conseil initial jusqu’à l’évolution de votre solution. Que ce
+                soit pour une optimisation technique, une refonte ou un suivi
+                long terme, vous échangez directement avec un développeur web
+                freelance basé à Béziers. Cette proximité permet une meilleure
+                compréhension de vos besoins et une réactivité optimale pour
+                faire évoluer votre site internet ou votre application web dans
+                le temps.
               </p>
             </div>
           </div>
@@ -156,8 +171,12 @@ export default function HomeA() {
 
           <div className="grid md:grid-cols-2 gap-12 text-gray-300 text-lg">
             <p className="mt-10">
-              Je conçois et développe des solutions web modernes, fiables et
-              évolutives, adaptées à vos objectifs et à votre activité.
+              Je conçois et développe des sites internet modernes, fiables et
+              optimisés pour le référencement naturel (SEO), adaptés aux besoins
+              des entreprises locales à Béziers, dans l’Hérault et les
+              Hauts-Cantons. Chaque projet est pensé sur mesure en fonction de
+              votre activité, de vos objectifs et de votre cible afin de
+              garantir une présence en ligne efficace, performante et durable.
             </p>
             <ul className="relative z-10 space-y-2 list-disc ml-20">
               <li>Création de sites web</li>
@@ -178,10 +197,13 @@ export default function HomeA() {
 
           <div className="grid md:grid-cols-2 gap-12 text-gray-300 text-lg">
             <p className="mt-4">
-              Une collaboration directe, sans intermédiaires. De l’idée à la
-              mise en production, je vous accompagne avec rigueur, transparence
-              et exigence afin de garantir un résultat fiable, durable et aligné
-              avec vos priorités.
+              Faire appel à un développeur web freelance à Béziers, c’est
+              choisir une collaboration directe, sans intermédiaires. De l’idée
+              à la mise en production, je vous accompagne avec rigueur,
+              transparence et exigence. Cette approche permet de garantir un
+              résultat fiable, durable et parfaitement aligné avec vos besoins,
+              tout en offrant une grande flexibilité et une meilleure réactivité
+              pour vos projets digitaux dans l’Hérault.
             </p>
             <ul className="relative z-10 space-y-2 list-disc ml-20">
               <li>Un interlocuteur unique</li>
@@ -202,15 +224,33 @@ export default function HomeA() {
 
           <div className="grid md:grid-cols-2 gap-12 text-gray-300 text-lg">
             <p className="mt-8">
-              J’utilise des technologies modernes et éprouvées afin de concevoir
-              des applications rapides, sécurisées et évolutives. Chaque choix
-              technique est fait en fonction de votre projet.
+              J’utilise des technologies modernes et éprouvées pour concevoir
+              des sites internet et des applications web rapides, sécurisées et
+              évolutives. Chaque choix technique est réalisé en fonction de
+              votre projet afin d’optimiser les performances, l’expérience
+              utilisateur et le référencement SEO. L’objectif est de vous
+              proposer des solutions fiables, adaptées aux standards actuels du
+              web et capables d’évoluer avec votre activité.
             </p>
             <ul className="space-y-1 list-disc ml-20">
-              <li>React</li>
+              <li>
+                <a
+                  href="https://react.dev"
+                  target="_blank"
+                  className="text-blue-400 underline"
+                >
+                  React
+                </a>{" "}
+              </li>
               <li>Tailwind</li>
               <li>Node.js</li>
-              <li>Symfony / PHP</li>
+              <a
+                href="https://symfony.com"
+                target="_blank"
+                className="text-blue-400 underline"
+              >
+                Symfony/PHP
+              </a>{" "}
               <li>MySQL</li>
               <li>Et bien d'autres</li>
             </ul>
@@ -226,13 +266,14 @@ export default function HomeA() {
 
           <div className="grid md:grid-cols-2 gap-12 text-gray-300 text-lg">
             <p className="mt-4">
-              Chaque projet débute par un échange pour comprendre votre vision,
-              vos objectifs et vos contraintes. Je définis ensuite une solution
-              adaptée, tant sur le plan fonctionnel que technique. Le
-              développement est réalisé de manière itérative, avec des points
-              réguliers pour assurer qualité, performance et cohérence. Une fois
-              livré, je reste disponible pour accompagner l’évolution et la
-              maintenance de votre solution.
+              Chaque projet débute par un échange approfondi afin de comprendre
+              votre activité, vos objectifs et vos contraintes. Je conçois
+              ensuite une solution sur mesure, adaptée à vos besoins
+              fonctionnels et techniques. Le développement est réalisé de
+              manière progressive avec des points réguliers pour garantir
+              qualité, performance et cohérence. Une fois le projet livré, je
+              reste disponible pour assurer le suivi, la maintenance et les
+              évolutions futures de votre site internet ou application web.
             </p>
             <ul className="space-y-1 list-disc ml-20 mt-14">
               <li>Comprendre votre vision</li>
@@ -254,11 +295,13 @@ export default function HomeA() {
           <div className="grid md:grid-cols-2 gap-12 text-gray-300 text-lg">
             <div>
               <p className="mt-8">
-                Pour garantir{" "}
-                <span className="text-white font-semibold">performance</span> et{" "}
-                <span className="text-white font-semibold">sérénité</span>, je
-                propose une formule d’accompagnement tout-en-un : vous restez
-                focus sur votre activité, je m’occupe du technique.
+                Pour garantir la performance, la sécurité et la stabilité de
+                votre site internet, je propose une solution d’hébergement et de
+                maintenance adaptée aux entreprises à Béziers et dans l’Hérault.
+                Vous bénéficiez d’un accompagnement complet incluant mises à
+                jour, surveillance, sauvegardes et support technique, afin de
+                vous concentrer pleinement sur votre activité sans vous soucier
+                des aspects techniques.
               </p>
               <p className="text-sm text-gray-200/80 leading-relaxed">
                 <span className="text-white font-semibold">

@@ -68,7 +68,7 @@ export default function Carousel({ images = [] }) {
               alt="carousel"
               fill
               className="object-cover rounded-3xl shadow-xl"
-              priority
+              priority={false}
             />
           </div>
 
