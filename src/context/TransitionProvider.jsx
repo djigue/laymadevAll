@@ -3,7 +3,10 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
-const TransitionContext = createContext();
+const TransitionContext = createContext({
+  navigate: () => {},
+  isTransitioning: false,
+});
 
 export function TransitionProvider({ children }) {
   const router = useRouter();
@@ -44,4 +47,6 @@ export function TransitionProvider({ children }) {
   );
 }
 
-export const usePageTransition = () => useContext(TransitionContext);
+export const usePageTransition = () => {
+  return useContext(TransitionContext);
+};
