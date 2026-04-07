@@ -41,7 +41,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/",
+    canonical: "https://www.laymadev.com/",
   },
 
   icons: {

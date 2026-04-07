@@ -29,10 +29,6 @@ export const metadata = {
     follow: true,
   },
 
-  alternates: {
-    canonical: "https://www.laymadev.com",
-  },
-
   openGraph: {
     title: "Création site internet Béziers",
     description:
