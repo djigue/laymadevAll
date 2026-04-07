@@ -112,7 +112,7 @@ export default function HomeA() {
           </MotionP>
 
           <Link
-            href="#services"
+            href="/styleA/services"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-3xl bg-blue-600 hover:bg-blue-500 transition text-white font-medium shadow-xl"
           >
             Découvrir mes services →
