@@ -244,13 +244,15 @@ export default function HomeA() {
               </li>
               <li>Tailwind</li>
               <li>Node.js</li>
-              <a
-                href="https://symfony.com"
-                target="_blank"
-                className="text-blue-400 underline"
-              >
-                Symfony/PHP
-              </a>{" "}
+              <li>
+                <a
+                  href="https://symfony.com"
+                  target="_blank"
+                  className="text-blue-400 underline"
+                >
+                  Symfony/PHP
+                </a>{" "}
+              </li>
               <li>MySQL</li>
               <li>Et bien d'autres</li>
             </ul>

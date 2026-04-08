@@ -6,14 +6,14 @@ import navLinks from "./NavLinks";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MenuBurger from "./MenuBurger";
-import buildHref from "@/lib/builHref";
-import { usePageTransition } from "@/context/TransitionProvider";
 
 export default function Navbar() {
-  const { navigate } = usePageTransition();
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(null);
-  const isActive = (href) => pathname === href;
+
+  const getHref = (href) => `/styleA${href}`;
+  const isActive = (href) => pathname === getHref(href);
+
   return (
     <>
       {/* ===== MOBILE TOP BAR ===== */}
@@ -25,14 +25,7 @@ export default function Navbar() {
       {/* ===== DESKTOP SIDEBAR ===== */}
       <aside className="hidden md:flex w-72 h-screen fixed top-0 left-0 bg-slate-950 text-gray-300 border-r border-slate-800 flex-col px-6 py-10 z-50">
         <div className="mb-16 flex flex-col items-center">
-          <Link
-            href={buildHref(pathname, "/home")}
-            className="flex items-center"
-            onClick={(e) => {
-              e.preventDefault();
-              navigate(buildHref(pathname, "/home"));
-            }}
-          >
+          <Link href="/styleA/home" className="flex items-center">
             <img
               src="/images/logo.png"
               alt="LAYMA.dev studio web à Béziers"
@@ -51,15 +44,10 @@ export default function Navbar() {
               {link.children ? (
                 <div>
                   <div className="flex items-center justify-between">
-                    {/* TEXTE = NAVIGATION */}
                     <Link
-                      href={buildHref(pathname, link.href)}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navigate(buildHref(pathname, link.href));
-                      }}
+                      href={getHref(link.href)}
                       className={`transition ${
-                        isActive(buildHref(pathname, link.href))
+                        isActive(link.href)
                           ? "text-white font-semibold"
                           : "text-gray-300 hover:text-white"
                       }`}
@@ -67,11 +55,11 @@ export default function Navbar() {
                       {link.label}
                     </Link>
 
-                    {/* BOUTON = DROPDOWN */}
                     <button
-                      onClick={(e) => {
-                        setOpenMenu(openMenu === index ? null : index);
-                      }}
+                      type="button"
+                      onClick={() =>
+                        setOpenMenu(openMenu === index ? null : index)
+                      }
                       className="ml-2 text-lg cursor-pointer text-gray-300 hover:text-white"
                     >
                       {openMenu === index ? "−" : "+"}
@@ -89,13 +77,9 @@ export default function Navbar() {
                         {link.children.map((child, i) => (
                           <li key={i}>
                             <Link
-                              href={buildHref(pathname, child.href)}
-                              onClick={(e) => {
-                                e.preventDefault();
-                                navigate(buildHref(pathname, child.href));
-                              }}
+                              href={getHref(child.href)}
                               className={`text-sm transition ${
-                                isActive(buildHref(pathname, child.href))
+                                isActive(child.href)
                                   ? "text-white"
                                   : "text-gray-400 hover:text-white"
                               }`}
@@ -110,13 +94,9 @@ export default function Navbar() {
                 </div>
               ) : (
                 <Link
-                  href={buildHref(pathname, link.href)}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    navigate(buildHref(pathname, link.href));
-                  }}
+                  href={getHref(link.href)}
                   className={`transition ${
-                    isActive(buildHref(pathname, link.href))
+                    isActive(link.href)
                       ? "text-white font-semibold"
                       : "text-gray-300 hover:text-white"
                   }`}
