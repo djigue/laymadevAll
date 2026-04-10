@@ -2,14 +2,6 @@ import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 import ButtonB from "@/components/buttons/ButtonB";
 
-export const metadata = {
-  title: "Services | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/services",
-  },
-};
-
 export default function ServicesC() {
   return (
     <>

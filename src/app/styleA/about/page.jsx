@@ -2,55 +2,6 @@ import ButtonB from "@/components/buttons/ButtonB";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "À propos | LAYMAdev - Développeur Web Béziers",
-
-  description:
-    "Découvrez LAYMAdev, développeur web basé à Béziers. Spécialisé en création de sites internet, SEO et applications web pour les entreprises de l’Hérault et des Hauts-Cantons.",
-
-  keywords: [
-    "LAYMAdev développeur web Béziers",
-    "développeur web Hérault freelance",
-    "création site internet Béziers",
-    "expert web Hauts-Cantons",
-    "développeur application web Occitanie",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/about",
-  },
-
-  openGraph: {
-    title: "À propos de LAYMAdev",
-    description:
-      "Développeur web à Béziers spécialisé en création de sites et applications web.",
-    url: "https://www.laymadev.com/styleA/about",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "LAYMAdev développeur web Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "À propos de LAYMAdev",
-    description: "Découvrez le développeur web derrière LAYMAdev à Béziers.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function AboutPage() {
   return (
     <>

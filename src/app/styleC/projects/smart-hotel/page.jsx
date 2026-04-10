@@ -3,14 +3,6 @@ import { getImages } from "@/lib/getImages";
 import MotionTitle from "@/components/anims/MotionTitle";
 import MotionP from "@/components/anims/GoodP";
 
-export const metadata = {
-  title: "Smart Hotel | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/projects/smart-hotel",
-  },
-};
-
 export default function SmartHotelC() {
   const imagesHotel = getImages("hotel");
 

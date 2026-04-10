@@ -1,10 +1,16 @@
 @import "tailwindcss";
 
+/* =========================
+   🌍 GLOBAL VARIABLES
+========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f1115; /* 🔥 couleur safe globale */
+  --foreground: #ededed;
 }
 
+/* =========================
+   🎨 THEME
+========================= */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,13 +18,89 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================
+   🧱 BASE
+========================= */
+html,
+body {
+  height: auto;
+  overflow: auto;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   ✨ TRANSITIONS CORE
+========================= */
+.page-transition {
+  will-change: transform, opacity, filter;
+}
+
+/* =========================
+   🎬 STYLE A (fade / blur)
+========================= */
+.page-transition.styleA {
+  transition: all 0.35s ease;
+}
+
+.page-transition.styleA.out {
+  opacity: 0;
+  transform: scale(0.98);
+  filter: blur(6px);
+}
+
+.page-transition.styleA.in {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+/* =========================
+   🚀 STYLE C (overlay-based)
+   ⚠️ IMPORTANT : no transform here
+========================= */
+.page-transition.styleC {
+  transform: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* =========================
+   🎞️ OVERLAY ANIMATIONS
+========================= */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* =========================
+   🧩 UTILITIES
+========================= */
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -32,15 +114,4 @@
   .animate-fadeOut {
     animation: fadeOut 0.35s ease forwards;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
-  height: auto;
-  overflow: auto;
 }

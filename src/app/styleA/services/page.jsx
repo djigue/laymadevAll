@@ -2,54 +2,6 @@ import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 import ButtonB from "@/components/buttons/ButtonB";
 
-export const metadata = {
-  title: "Services web Béziers | Création site & SEO Hérault",
-
-  description:
-    "Découvrez les services de LAYMAdev à Béziers : création de site internet, SEO, applications web et solutions digitales dans l’Hérault et les Hauts-Cantons.",
-
-  keywords: [
-    "services développeur web Béziers",
-    "création site internet Hérault",
-    "SEO Béziers",
-    "développement web Hauts-Cantons",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/services",
-  },
-
-  openGraph: {
-    title: "Services web Béziers",
-    description:
-      "Création de site, SEO et développement web à Béziers et dans l’Hérault.",
-    url: "https://www.laymadev.com/styleA/services",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Services web Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Services LAYMAdev",
-    description: "Découvrez les services web à Béziers.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function Services() {
   return (
     <>

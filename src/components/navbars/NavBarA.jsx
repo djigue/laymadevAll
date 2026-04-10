@@ -1,37 +1,40 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import navLinks from "./NavLinks";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MenuBurger from "./MenuBurger";
+import TransitionLink from "../TransitionLink";
+import buildHref from "@/lib/builHref";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(null);
 
-  const getHref = (href) => `/styleA${href}`;
-  const isActive = (href) => pathname === getHref(href);
+  const isActive = (href) => pathname === href;
 
   return (
     <>
       {/* ===== MOBILE TOP BAR ===== */}
-      <div className="md:hidden fixed top-0 left-0 w-full z-[9999] bg-slate-950 text-white flex items-center justify-between px-6 py-4">
+      <div className="md:hidden fixed top-0 left-0 w-full bg-slate-950 text-white flex items-center justify-between px-6 py-4 relative z-[10000]">
         <img src="/images/logo.png" alt="logo" className="h-12 w-20" />
         <MenuBurger />
       </div>
 
       {/* ===== DESKTOP SIDEBAR ===== */}
-      <aside className="hidden md:flex w-72 h-screen fixed top-0 left-0 bg-slate-950 text-gray-300 border-r border-slate-800 flex-col px-6 py-10 z-50">
+      <aside className="hidden md:flex w-72 h-screen fixed top-0 left-0 bg-slate-950 text-gray-300 border-r border-slate-800 flex-col px-6 py-10 z-[10000]">
         <div className="mb-16 flex flex-col items-center">
-          <Link href="/styleA/home" className="flex items-center">
+          <TransitionLink
+            href={buildHref(pathname, "/home")}
+            className="flex items-center"
+          >
             <img
               src="/images/logo.png"
               alt="LAYMA.dev studio web à Béziers"
               className="h-20 w-auto opacity-90 hover:opacity-100 transition rounded-md"
             />
-          </Link>
+          </TransitionLink>
 
           <p className="text-xs text-gray-500 mt-2">
             Studio digital & solutions tech
@@ -44,16 +47,16 @@ export default function Navbar() {
               {link.children ? (
                 <div>
                   <div className="flex items-center justify-between">
-                    <Link
-                      href={getHref(link.href)}
+                    <TransitionLink
+                      href={buildHref(pathname, link.href)}
                       className={`transition ${
-                        isActive(link.href)
+                        isActive(buildHref(pathname, link.href))
                           ? "text-white font-semibold"
                           : "text-gray-300 hover:text-white"
                       }`}
                     >
                       {link.label}
-                    </Link>
+                    </TransitionLink>
 
                     <button
                       type="button"
@@ -76,16 +79,16 @@ export default function Navbar() {
                       >
                         {link.children.map((child, i) => (
                           <li key={i}>
-                            <Link
-                              href={getHref(child.href)}
+                            <TransitionLink
+                              href={buildHref(pathname, child.href)}
                               className={`text-sm transition ${
-                                isActive(child.href)
+                                isActive(buildHref(pathname, child.href))
                                   ? "text-white"
                                   : "text-gray-400 hover:text-white"
                               }`}
                             >
                               {child.label}
-                            </Link>
+                            </TransitionLink>
                           </li>
                         ))}
                       </motion.ul>
@@ -93,16 +96,16 @@ export default function Navbar() {
                   </AnimatePresence>
                 </div>
               ) : (
-                <Link
-                  href={getHref(link.href)}
+                <TransitionLink
+                  href={buildHref(pathname, link.href)}
                   className={`transition ${
-                    isActive(link.href)
+                    isActive(buildHref(pathname, link.href))
                       ? "text-white font-semibold"
                       : "text-gray-300 hover:text-white"
                   }`}
                 >
                   {link.label}
-                </Link>
+                </TransitionLink>
               )}
             </li>
           ))}

@@ -3,31 +3,6 @@ import MotionTitle from "@/components/anims/MotionTitle";
 import MotionP from "@/components/anims/GoodP";
 import MotionDiv from "@/components/anims/MotionDiv";
 
-export const metadata = {
-  title: "LAYMAdev - Version C",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/home",
-  },
-
-  openGraph: {
-    title: "LAYMAdev",
-    description: "Version alternative du site LAYMAdev.",
-    url: "https://www.laymadev.com/styleC/home",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "LAYMAdev",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-};
-
 export default function HomeC() {
   return (
     <>

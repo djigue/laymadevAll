@@ -3,14 +3,6 @@ import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 import MotionDiv from "@/components/anims/MotionDiv";
 
-export const metadata = {
-  title: "Développement web | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/services/dev-web",
-  },
-};
-
 export default function DevWeb() {
   return (
     <div className="py-28 text-white">

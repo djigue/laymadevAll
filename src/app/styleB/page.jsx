@@ -10,36 +10,6 @@ import PremiumTildCard from "@/components/anims/PremiumTildCard";
 import PrimaryCTA from "@/components/buttons/PrimaryCTA";
 import ScrollToTopButton from "@/components/buttons/ScrollToTopButton";
 
-export const metadata = {
-  title: "LAYMAdev - Version alternative",
-
-  robots: {
-    index: false,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleB",
-  },
-
-  openGraph: {
-    title: "LAYMAdev",
-    description: "Version alternative du site LAYMAdev.",
-    url: "https://www.laymadev.com/styleB",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "LAYMAdev",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-};
-
 export default function HomeB() {
   const imagesHotel = getImages("hotel");
   const imagesTeoola = getImages("teoola");

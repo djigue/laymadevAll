@@ -2,14 +2,6 @@ import ProjectShowcase from "@/components/anims/ProjectShowcase";
 import MotionTitle from "@/components/anims/MotionTitle";
 import MotionP from "@/components/anims/MotionP";
 
-export const metadata = {
-  title: "Projets | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/projects",
-  },
-};
-
 export default function Projets() {
   return (
     <div className="py-20 md:py-8">

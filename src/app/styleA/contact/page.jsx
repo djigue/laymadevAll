@@ -2,54 +2,6 @@ import ContactFormB from "@/components/forms/ContactForm";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Contact | LAYMAdev - Développeur Web Béziers",
-
-  description:
-    "Contactez LAYMAdev, développeur web à Béziers. Discutons de votre projet de site internet, SEO ou application web dans l’Hérault et les Hauts-Cantons.",
-
-  keywords: [
-    "contact développeur web Béziers",
-    "devis site internet Hérault",
-    "freelance web Béziers contact",
-    "création site Hauts-Cantons contact",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/contact",
-  },
-
-  openGraph: {
-    title: "Contact développeur web Béziers",
-    description:
-      "Contactez LAYMAdev pour votre projet web à Béziers et dans l’Hérault.",
-    url: "https://www.laymadev.com/styleA/contact",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Contact LAYMAdev Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact LAYMAdev",
-    description: "Contactez votre développeur web à Béziers.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function ContactB() {
   return (
     <>

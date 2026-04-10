@@ -2,53 +2,6 @@ import ButtonB from "@/components/buttons/ButtonB";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Développement web sur mesure Béziers | LAYMAdev",
-
-  description:
-    "Développement d’applications web sur mesure à Béziers. Solutions performantes pour entreprises dans l’Hérault et les Hauts-Cantons.",
-
-  keywords: [
-    "développement web Béziers",
-    "application web Hérault",
-    "développeur freelance Occitanie",
-    "solution web sur mesure",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/services/dev-web",
-  },
-
-  openGraph: {
-    title: "Développement web Béziers",
-    description: "Applications web sur mesure dans l’Hérault.",
-    url: "https://www.laymadev.com/styleA/services/dev-web",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Développement web Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Développement web Béziers",
-    description: "Applications web sur mesure.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function DevWeb() {
   return (
     <>

@@ -3,39 +3,6 @@ import { getImages } from "@/lib/getImages";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Projet Smart Hotel | LAYMAdev",
-
-  description:
-    "Projet Smart Hotel développé par LAYMAdev : solution digitale innovante pour la gestion hôtelière.",
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/projects/smart-hotel",
-  },
-
-  openGraph: {
-    title: "Projet Smart Hotel",
-    description: "Projet web réalisé par LAYMAdev.",
-    url: "https://www.laymadev.com/styleA/projects/smart-hotel",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Projet Smart Hotel",
-      },
-    ],
-    locale: "fr_FR",
-    type: "article",
-  },
-};
-
 export default function SmartHotelB() {
   return (
     <>

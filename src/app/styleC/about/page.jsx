@@ -1,14 +1,6 @@
 import MotionTitle from "@/components/anims/MotionTitle";
 import MotionTag from "@/components/anims/MotionTag";
 
-export const metadata = {
-  title: "À propos | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/about",
-  },
-};
-
 export default function AboutC() {
   return (
     <>

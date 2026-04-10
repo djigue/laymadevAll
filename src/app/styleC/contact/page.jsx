@@ -4,14 +4,6 @@ import MotionTitle from "@/components/anims/MotionTitle";
 import MotionP from "@/components/anims/GoodP";
 import MotionTag from "@/components/anims/MotionTag";
 
-export const metadata = {
-  title: "Contact | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/contact",
-  },
-};
-
 export default function ContactC() {
   return (
     <>

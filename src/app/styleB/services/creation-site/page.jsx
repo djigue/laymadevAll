@@ -2,19 +2,6 @@ import GoodTitle from "@/components/anims/MotionTag";
 import GoodP from "@/components/anims/GoodP";
 import ReturnButton from "@/components/buttons/ReturnButton";
 
-export const metadata = {
-  title: "Création site | LAYMAdev",
-
-  robots: {
-    index: false,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleB/services/creation-site",
-  },
-};
-
 export default function CreationSite() {
   return (
     <>

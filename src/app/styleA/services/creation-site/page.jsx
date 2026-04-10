@@ -2,53 +2,6 @@ import ButtonB from "@/components/buttons/ButtonB";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Création site internet Béziers | LAYMAdev",
-
-  description:
-    "Création de sites internet professionnels à Béziers, Hérault et Hauts-Cantons. Sites vitrines, e-commerce et solutions sur mesure.",
-
-  keywords: [
-    "création site internet Béziers",
-    "site vitrine Hérault",
-    "site e-commerce Béziers",
-    "développeur site web Hauts-Cantons",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/services/creation-site",
-  },
-
-  openGraph: {
-    title: "Création site internet Béziers",
-    description: "Création de sites web professionnels dans l’Hérault.",
-    url: "https://www.laymadev.com/styleA/services/creation-site",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Création site web Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Création site Béziers",
-    description: "Création de sites internet professionnels.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function CreationSite() {
   return (
     <>

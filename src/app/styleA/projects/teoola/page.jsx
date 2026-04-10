@@ -3,39 +3,6 @@ import { getImages } from "@/lib/getImages";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Projet Teoola | LAYMAdev",
-
-  description:
-    "Projet Teoola réalisé par LAYMAdev : plateforme web innovante développée sur mesure.",
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/projects/teoola",
-  },
-
-  openGraph: {
-    title: "Projet Teoola",
-    description: "Projet web développé par LAYMAdev.",
-    url: "https://www.laymadev.com/styleA/projects/teoola",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Projet Teoola",
-      },
-    ],
-    locale: "fr_FR",
-    type: "article",
-  },
-};
-
 export default function TeoolaB() {
   return (
     <>

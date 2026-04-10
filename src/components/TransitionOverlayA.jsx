@@ -3,12 +3,18 @@
 import { motion } from "framer-motion";
 import { usePageTransition } from "@/context/TransitionProvider";
 
-export default function TransitionOverlay() {
-  const { isTransitioning } = usePageTransition();
+export default function TransitionOverlayA() {
+  const { isTransitioning, direction } = usePageTransition();
   return (
     <motion.div
       initial={false}
-      animate={{ y: isTransitioning ? "0%" : "100%" }}
+      animate={{
+        x: isTransitioning
+          ? "0vw"
+          : direction === "forward"
+          ? "100vw"
+          : "-100vw",
+      }}
       transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
       className="
         fixed z-[9998] pointer-events-none bg-slate-950

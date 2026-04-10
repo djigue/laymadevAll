@@ -5,60 +5,6 @@ import MotionTitle from "@/components/anims/MotionTitle";
 import MotionP from "@/components/anims/MotionP";
 import Script from "next/script";
 
-export const metadata = {
-  title: "Création site internet Béziers | Développeur Web Hérault",
-
-  description:
-    "Création de sites internetpour entreprises locales à Béziers, Hérault et Hauts-Cantons. Développeur web freelance. ",
-
-  keywords: [
-    "création site internet Béziers",
-    "développeur web Béziers",
-    "site internet Hérault",
-    "développeur freelance Hérault",
-    "création site Hauts-Cantons",
-    "SEO Béziers",
-    "référencement naturel Hérault",
-    "développement web sur mesure",
-    "application web Béziers",
-    "agence web Béziers",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/home",
-  },
-
-  openGraph: {
-    title: "Création site internet Béziers",
-    description:
-      "Développeur web à Béziers. Création de sites, SEO et applications web dans l’Hérault et les Hauts-Cantons.",
-    url: "https://www.laymadev.com/styleA/home",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Création site web Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Développeur Web Béziers",
-    description: "Création de site internet à Béziers et dans l’Hérault.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function HomeA() {
   return (
     <>

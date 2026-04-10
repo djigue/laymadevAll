@@ -2,52 +2,6 @@ import PremiumCard from "@/components/anims/PremiumCard";
 import MotionP from "@/components/anims/MotionP";
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Projets web Béziers | Réalisations LAYMAdev",
-
-  description:
-    "Découvrez les projets réalisés par LAYMAdev à Béziers : sites internet, applications web et solutions digitales dans l’Hérault.",
-
-  keywords: [
-    "projets web Béziers",
-    "portfolio développeur web",
-    "réalisations site internet Hérault",
-  ],
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/projects",
-  },
-
-  openGraph: {
-    title: "Projets LAYMAdev",
-    description: "Portfolio de projets web à Béziers.",
-    url: "https://www.laymadev.com/styleA/projects",
-    siteName: "LAYMAdev",
-    images: [
-      {
-        url: "/logoBlack.png",
-        width: 800,
-        height: 600,
-        alt: "Projets web Béziers",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Projets web Béziers",
-    description: "Découvrez mes réalisations.",
-    images: ["/logoBlack.png"],
-  },
-};
-
 export default function ProjectsB() {
   return (
     <>

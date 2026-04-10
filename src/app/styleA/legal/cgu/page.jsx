@@ -1,16 +1,5 @@
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "CGU | LAYMAdev",
-  robots: {
-    index: false,
-    follow: true,
-  },
-  alternates: {
-    canonical: "https://www.laymadev.com/styleA/legal/cgu",
-  },
-};
-
 export default function CGU() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-20 text-white">

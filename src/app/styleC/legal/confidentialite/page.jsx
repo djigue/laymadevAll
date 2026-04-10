@@ -1,13 +1,5 @@
 import MotionTitle from "@/components/anims/MotionTitle";
 
-export const metadata = {
-  title: "Confidentialité | LAYMAdev",
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleC/legal/confidentialite",
-  },
-};
-
 export default function Confidentialite() {
   return (
     <section className="max-w-4xl mx-auto px-6 py-20 text-white">

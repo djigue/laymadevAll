@@ -2,19 +2,6 @@ import GoodP from "@/components/anims/GoodP";
 import GoodTitle from "@/components/anims/MotionTag";
 import ReturnButton from "@/components/buttons/ReturnButton";
 
-export const metadata = {
-  title: "CGU | LAYMAdev",
-
-  robots: {
-    index: false,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.laymadev.com/styleB/legal/cgu",
-  },
-};
-
 export default function DevWeb() {
   return (
     <>
