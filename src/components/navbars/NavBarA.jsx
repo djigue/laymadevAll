@@ -18,7 +18,17 @@ export default function Navbar() {
     <>
       {/* ===== MOBILE TOP BAR ===== */}
       <div className="md:hidden fixed top-0 left-0 w-full bg-slate-950 text-white flex items-center justify-between px-6 py-4 relative z-[10000]">
-        <img src="/images/logo.png" alt="logo" className="h-12 w-20" />
+        <TransitionLink
+          href={buildHref(pathname, "/home")}
+          className="flex items-center"
+        >
+          <img
+            src="/images/logo.png"
+            alt="LAYMA.dev studio web à Béziers"
+            className="h-12 w-20 opacity-90 hover:opacity-100 transition rounded-md"
+          />
+        </TransitionLink>
+
         <MenuBurger />
       </div>
 

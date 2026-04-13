@@ -19,8 +19,6 @@ export function TransitionProvider({ children }) {
 
   const DURATION = 400;
 
-  const isStyleC = pathname.split("/")[1] === "styleC";
-
   const navigate = async (href) => {
     if (!href || href === pathname) return;
 
@@ -67,16 +65,7 @@ export function TransitionProvider({ children }) {
     <TransitionContext.Provider
       value={{ navigate, isTransitioning, direction }}
     >
-      {/* <div
-        className={`
-          page-transition
-          ${isTransitioning ? "out" : "in"}
-          ${isStyleC ? "styleC" : "styleA"}
-          ${direction}
-        `}
-      > */}
       {children}
-      {/* </div> */}
     </TransitionContext.Provider>
   );
 }

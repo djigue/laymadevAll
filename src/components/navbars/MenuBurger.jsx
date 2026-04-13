@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import navLinks from "./NavLinks";
+import buildHref from "@/lib/builHref";
 
 export default function MenuBurger() {
   const [open, setOpen] = useState(false);
@@ -35,9 +36,19 @@ export default function MenuBurger() {
           >
             {/* HEADER */}
             <div className="flex justify-between items-center mb-16">
-              <span className="text-xl font-medium text-white tracking-wide">
-                LAYMA.dev
-              </span>
+              <Link
+                href={buildHref(pathname, "/home")}
+                className="flex items-center"
+                onClick={(e) => {
+                  setOpen(false);
+                }}
+              >
+                <img
+                  src="/images/logo.png"
+                  alt="LAYMA.dev studio web à Béziers"
+                  className="h-12 w-auto opacity-90 hover:opacity-100 transition rounded-md"
+                />
+              </Link>
 
               <button onClick={() => setOpen(false)}>
                 <X size={26} className="text-white" />
@@ -65,7 +76,7 @@ export default function MenuBurger() {
                   }}
                 >
                   <Link
-                    href={link.href}
+                    href={buildHref(pathname, link.href)}
                     onClick={() => setOpen(false)}
                     className={`block transition ${
                       isActive(link.href)
@@ -81,7 +92,7 @@ export default function MenuBurger() {
                       {link.children.map((child) => (
                         <li key={child.href}>
                           <Link
-                            href={child.href}
+                            href={buildHref(pathname, child.href)}
                             onClick={() => setOpen(false)}
                             className={`block transition ${
                               isActive(child.href)

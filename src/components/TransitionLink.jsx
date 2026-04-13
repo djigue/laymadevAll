@@ -13,6 +13,9 @@ export default function TransitionLink({
 
   const handleClick = (e) => {
     e.preventDefault();
+    if (props.onClick) {
+      props.onClick(e);
+    }
     navigate(href);
   };
 
