@@ -25,7 +25,7 @@ export default function ContactC() {
       </div>
 
       {/* CONTENT */}
-      <div className="grid md:grid-cols-2 gap-20 items-start md:mb-20">
+      <div className="grid md:grid-cols-2 gap-20 items-start mb-10 md:mb-20">
         {/* FORM */}
         <ContactFormC />
 

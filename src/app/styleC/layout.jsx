@@ -22,7 +22,6 @@ export default function LayoutC({ children }) {
               <TextRefresh my="mt-0" mb="mb-0" />
             </div>
           </main>
-
           <Footer bg="#0f1115" text="text-gray-400" accent="text-white" />
         </div>
       </div>

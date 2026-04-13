@@ -4,7 +4,7 @@ import MotionP from "@/components/anims/MotionP";
 
 export default function Projets() {
   return (
-    <div className="py-20 md:py-8">
+    <div className=" md:py-8">
       {/* HEADER */}
       <div className="text-center mb-20 md:mb-42">
         <MotionTitle className="text-4xl md:text-6xl font-bold text-center leading-tight md:mb-32 mt-12">
@@ -19,7 +19,7 @@ export default function Projets() {
       </div>
 
       {/* PROJECTS */}
-      <div className="space-y-24 md:space-y-10">
+      <div className="md:space-y-10">
         <ProjectShowcase
           name="teoola"
           title="Teoola – Application métier sur mesure"

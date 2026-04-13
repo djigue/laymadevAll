@@ -35,9 +35,9 @@ export default function ProjectShowcase({
   const [mainImage, secondImage, thirdImage] = getImages(name);
 
   return (
-    <section className="grid md:grid-cols-2 gap-20 md:gap-28 items-center">
+    <section className="grid md:grid-cols-2 md:gap-28 items-center">
       {/* TEXT */}
-      <div className={`${reverse ? "md:order-2" : ""} mb-48`}>
+      <div className={`${reverse ? "md:order-2" : ""} mb-10 md:mb-48`}>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function ProjectShowcase({
           reverse ? "md:order-1" : ""
         }`}
       >
-        <div className="relative w-full max-w-[750px] h-[620px]">
+        <div className="relative w-full max-w-[750px] h-[350px] md:h-[620px]">
           {/* GLOW */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-96 h-96 bg-blue-500/10 blur-3xl rounded-full" />
@@ -116,6 +116,7 @@ export default function ProjectShowcase({
           )}
 
           {/* LEFT IMAGE */}
+          {/* LEFT IMAGE */}
           {thirdImage && (
             <motion.div
               initial={{ opacity: 0, y: 140, scale: 0.9 }}
@@ -123,7 +124,7 @@ export default function ProjectShowcase({
               whileHover={{ scale: 1.03 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="absolute bottom-60 right-48 w-[56%] z-30 rounded-2xl overflow-hidden shadow-[0_20px_45px_rgba(0,0,0,0.45)]"
+              className="absolute bottom-16 md:bottom-60 right-40 md:right-48 w-[56%] z-30 rounded-2xl overflow-hidden shadow-[0_20px_45px_rgba(0,0,0,0.45)]"
             >
               <img src={thirdImage} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/50" />

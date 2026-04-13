@@ -129,7 +129,7 @@ export default function HomeC() {
       </div>
 
       {/* 🔥 SECTION SEO AJOUTÉE */}
-      <section className="max-w-6xl mx-auto px-6 pb-28">
+      <section className="max-w-6xl mt-20 md:mt-0 mx-auto px-6 pb-28">
         <div className="space-y-20">
           {/* BLOCK 1 */}
           <div className="grid md:grid-cols-2 gap-12 items-center">

@@ -3,7 +3,7 @@ import MotionTag from "@/components/anims/MotionTag";
 
 export default function AboutC() {
   return (
-    <>
+    <div className="space-y-20">
       <MotionTitle className="text-4xl md:text-6xl font-bold text-center leading-tight md:mb-32 mt-12">
         Studio web indépendant à Béziers
       </MotionTitle>
@@ -279,6 +279,6 @@ export default function AboutC() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
