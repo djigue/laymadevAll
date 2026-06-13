@@ -172,7 +172,7 @@ export default function ContactFormB() {
                   name="budget"
                   value={form.budget}
                   onChange={handleChange}
-                  placeholder="2000 €"
+                  placeholder="en €"
                   inputMode="numeric"
                   className="bg-black/40 border border-white/10 rounded-2xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
                 />
